@@ -1,7 +1,5 @@
 # Ads Products
 
-## prerequisite 
-
 ## Assumptions
 * Only the scenarios of Price calculation are tested 
 * There are 3 tables used 
@@ -11,6 +9,7 @@
 * company ID(number) would be the preferred way of implementation but for this demo the company name is used as the ID
 * Log4j integration is pending but for this demo we could use ```System.out.println();```
 
+## prerequisite
 ### Tech Used
 * Java >8
 * Maven
