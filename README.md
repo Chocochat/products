@@ -1,12 +1,16 @@
 # Ads Products
 
 ## Assumptions
-* Only the scenarios of Price calculation are tested 
+
 * There are 3 tables used 
   1. Product - includes the ad tyes like Classic, Standard and Premium
   2. Deal - holds the deal prices like 3 for 2, 5 for 4 etc
   3. Discount - includes the discounted prices 
 * company ID(number) would be the preferred way of implementation but for this demo the company name is used as the ID
+* Though the customer is a privileged customer but the number of ads posted doesn't meet the deal price then it is defaulted to default product price
+* In Deals table 3 for 2 is stored in db as 3:2 and default values are stored in db as 1:1
+* In Products table default values are stored as 0.0 overrided prices are stored as double value
+* Only the scenarios of Price calculation are unit tested. keeping it to the scope of the coding challenge
 * Log4j integration is pending but for this demo we could use ```System.out.println();```
 
 ## prerequisite
@@ -15,6 +19,9 @@
 * Maven
 * Junit
 * JaCoCo - Java code coverage tools (TBD)
+
+### IDE 
+* IntelliJ or any IDE that supports java development
 
 ### To build
 * maven - ```mvn clean install```
@@ -28,6 +35,9 @@
 ### Sample curls
 #### Swagger URL
 `http://localhost:8080/swagger-ui.html`
+#### Health check URL
+`http://localhost:8080/actuator/health`
+
 #### Main Price Calculator API
 ``
 curl --location --request GET 'http://localhost:8080/price' \
@@ -65,6 +75,8 @@ curl --location --request GET 'http://localhost:8080/price' \
 `http://localhost:8080/swagger-ui.html#/generic-controller`
 
 ![](images/generic.png)
+
+
 
 
 
