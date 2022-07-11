@@ -46,22 +46,22 @@ curl --location --request GET 'http://localhost:8080/price' \
 * Swagger file `http://localhost:8080/swagger-ui`
 
 ## Modifications via API 
-### To Deals Data
+### To _Deals_ Data
 `http://localhost:8080/swagger-ui.html#/deals-controller`
 
 ![](images/deals.png)
 
-### To Discounts Data
+### To _Discounts_ Data
 `http://localhost:8080/swagger-ui.html#/discounts-controller`
 
 ![](images/discounts.png)
 
-### To view Products data
+### To view _Products_ data
 `http://localhost:8080/swagger-ui.html#/products-controller`
 
 ![](images/products.png)
 
-### to get _Price_ and all data
+### To get _Price_ and _all_ data
 `http://localhost:8080/swagger-ui.html#/generic-controller`
 
 ![](images/generic.png)
