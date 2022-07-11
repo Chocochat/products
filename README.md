@@ -1,13 +1,13 @@
 # Ads Products
 
 ## Assumptions
-* Only the scenarios of Price calculation are tested 
-* There are 3 tables used 
+* Only the scenarios of Price calculation Unit tests are included 
+* There are 3 tables designed
   1. Product - includes the ad tyes like Classic, Standard and Premium
   2. Deal - holds the deal prices like 3 for 2, 5 for 4 etc
   3. Discount - includes the discounted prices 
-* company ID(number) would be the preferred way of implementation but for this demo the company name is used as the ID
-* Log4j integration is pending but for this demo we could use ```System.out.println();```
+* company ID(Numeric) would be the preferred way of implementation but for this demo the company name is used as the ID
+* Log4j integration is pending but for this demo to keep it simple ```System.out.println();``` is used
 
 ## prerequisite
 ### Tech Used
